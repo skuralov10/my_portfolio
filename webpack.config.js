@@ -30,7 +30,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      template: 'index.html',
+      template: 'index.pug',
       minify: {
         removeComments: isProd,
         collapseWhitespace: isProd
@@ -81,6 +81,13 @@ module.exports = {
           options: {
             presets: ['@babel/preset-env']
           }
+        }
+      },
+      {
+        test: /\.pug$/,
+        loader: 'pug-loader',
+        options: {
+          pretty: true
         }
       }
     ]
