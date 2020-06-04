@@ -2,7 +2,7 @@
 
 #### Для работы сборки у вас должны быть установлены
 * npm
-* gulp-cli
+* webpack-cli
 
 #### Как установить проект
 1. clone this repository
